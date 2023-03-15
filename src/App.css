@@ -1,16 +1,101 @@
-.App {
+body {
+  background-color: silver;
+}
+
+.App{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+  background-color: darkblue;
+  text-align: center;
+  padding: 0.1rem 0.1rem;
+  color: silver;
+}
+
+.inner_box{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.outer_box{
+  display: flex;
+  background-color: darkblue;
+  flex-direction: column;
+  padding: 1rem 1rem;
+  border-radius: 1.5rem;
+  margin: 2rem 1rem 1rem 1rem;
+}
+
+.output{
+  padding: 12px 16px;
+  border: #202123 solid 2px;
+  background-color: white;
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 1.5rem;
+}
+
+.input{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 16px;
+  border: #202123 solid 2px;
+  background-color: white;
+  width: 100%;
+  font-weight: bold;
+  border-radius: 1.5rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input p {
+  font-size: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  border: none;
+  border-radius: 2.5rem;
+  text-align: center;
+  cursor: pointer;
+  padding: 0.6rem 1rem;
+  background-color: darkblue;
+  color: white;
+}
+
+img {
+  width: 30%;
+  height: 30%;
+  object-fit: cover;
+  padding: 1rem 0rem 1rem 0rem;
+}
+
+input{
+  margin: 0.5rem 0rem 0.5rem 0rem;
+}
+
+.file_image{
+  display: none;
+}
+
+label{
+  cursor: pointer;
+  text-align:center;
+  padding: 3%;
+  border:thin solid black;
+  margin: 1rem 0rem;
+}
+
+.url_image{
+  border-radius: 1rem;
+  border: black solid 0.1rem;
+  outline: none;
+  padding: 0.5rem 0.5rem;
 }
 
 .App-header {
@@ -21,18 +106,34 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: silver;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+footer{
+  padding-top: 0.3rem;
+  text-align: center;
+  line-height: 0.5rem;
+}
+
+@media screen and (max-width: 475px) {
+  .inner_box{
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .input{
+    width: auto;
+  }
+
+  img{
+    width: 50%;
+    height: 50%;
+  }
+
+  .output{
+    width: auto;
   }
 }
