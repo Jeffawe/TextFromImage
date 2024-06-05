@@ -13,6 +13,10 @@ const App: React.FC = () => {
     setimg(event.target.value)
   }
 
+  const pStyle = {
+    cursor: 'pointer', // Change this to 'none' to make the cursor disappear
+  };
+
   const handleImage = (e: any) => {
     setimg(URL.createObjectURL(e.target.files[0]));
   }
@@ -73,7 +77,7 @@ const App: React.FC = () => {
         </div>
       </div>
       <footer>
-          <p>Built by Jeffery Ozoekwe-Awagu with tesseractjs</p>
+          <a href="https://www.jeffawe.com"></><p style={pStyle}>Built by Jeffery Ozoekwe-Awagu with tesseractjs</p></a>
           <p>Icon by Font Awesome</p>
         </footer>
     </div>
