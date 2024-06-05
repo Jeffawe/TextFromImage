@@ -13,8 +13,12 @@ const App: React.FC = () => {
     setimg(event.target.value)
   }
 
-  const pStyle = {
-    cursor: 'pointer', // Change this to 'none' to make the cursor disappear
+  const pCursor = {
+    cursor: 'pointer',
+  };
+
+  const pNone = {
+    cursor: 'pointer',
   };
 
   const handleImage = (e: any) => {
@@ -77,7 +81,7 @@ const App: React.FC = () => {
         </div>
       </div>
       <footer>
-          <a href="https://www.jeffawe.com"><p style={pStyle}>Built by Jeffery Ozoekwe-Awagu with tesseractjs</p></a>
+          <p style={pNone}>Built by <a href="https://www.jeffawe.com" style={pCursor}> Jeffery Ozoekwe-Awagu </a> with tesseractjs</p>
           <p>Icon by Font Awesome</p>
         </footer>
     </div>
