@@ -16,6 +16,17 @@ nav{
   color: silver;
 }
 
+.hoverEffect {
+  text-decoration: none;
+  color: initial;
+  transition: color 0.3s;
+}
+
+.hoverEffect:hover {
+  text-decoration: none;
+  color: blue;
+}
+
 .inner_box{
   display: flex;
   flex-direction: row;
