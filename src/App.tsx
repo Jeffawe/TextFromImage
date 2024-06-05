@@ -77,7 +77,7 @@ const App: React.FC = () => {
         </div>
       </div>
       <footer>
-          <a href="https://www.jeffawe.com"></><p style={pStyle}>Built by Jeffery Ozoekwe-Awagu with tesseractjs</p></a>
+          <a href="https://www.jeffawe.com"><p style={pStyle}>Built by Jeffery Ozoekwe-Awagu with tesseractjs</p></a>
           <p>Icon by Font Awesome</p>
         </footer>
     </div>
