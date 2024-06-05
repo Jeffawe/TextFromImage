@@ -12,15 +12,7 @@ const App: React.FC = () => {
   const SetImage = (event: any) => {
     setimg(event.target.value)
   }
-
-  const pCursor = {
-    cursor: 'pointer',
-  };
-
-  const pNone = {
-    cursor: 'pointer',
-  };
-
+  
   const handleImage = (e: any) => {
     setimg(URL.createObjectURL(e.target.files[0]));
   }
@@ -81,7 +73,7 @@ const App: React.FC = () => {
         </div>
       </div>
       <footer>
-          <p style={pNone}>Built by <a href="https://www.jeffawe.com" style={pCursor}> Jeffery Ozoekwe-Awagu </a> with tesseractjs</p>
+          <p className='footer_text'>Built by <a href="https://www.jeffawe.com" className='hoverEffect'> Jeffery Ozoekwe-Awagu </a> with tesseractjs</p>
           <p>Icon by Font Awesome</p>
         </footer>
     </div>
