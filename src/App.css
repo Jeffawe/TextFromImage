@@ -19,12 +19,17 @@ nav{
 .hoverEffect {
   text-decoration: none;
   color: initial;
+  cursor: pointer;
   transition: color 0.3s;
 }
 
 .hoverEffect:hover {
   text-decoration: none;
   color: blue;
+}
+
+.footer_text{
+  cursor: none;
 }
 
 .inner_box{
